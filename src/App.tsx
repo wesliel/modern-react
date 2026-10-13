@@ -1,6 +1,8 @@
+import UserList from './components/UserList'
+
 export default function App() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center gap-6 px-6 text-center">
+    <main className="mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center gap-6 px-6 py-12 text-center">
       <h1 className="text-4xl font-bold tracking-tight">
         modern-react
       </h1>
@@ -25,6 +27,10 @@ export default function App() {
           Tailwind docs
         </a>
       </div>
+      <section className="flex w-full flex-col items-center gap-3">
+        <h2 className="text-xl font-semibold">Mocked API demo</h2>
+        <UserList />
+      </section>
     </main>
   )
 }
